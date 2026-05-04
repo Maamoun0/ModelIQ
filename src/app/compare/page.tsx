@@ -36,13 +36,13 @@ function CompareContent() {
     fetchData();
   }, [searchParams]);
 
-  const modelA = useMemo(() => models.find(m => m.id === modelAId), [models, modelAId]);
-  const modelB = useMemo(() => models.find(m => m.id === modelBId), [models, modelBId]);
+  const modelA = models.find(m => m.id === modelAId);
+  const modelB = models.find(m => m.id === modelBId);
 
-  const verdict = useMemo(() => {
-    if (modelA && modelB) return generateVerdict(modelA, modelB);
-    return '';
-  }, [modelA, modelB]);
+  let verdict = '';
+  if (modelA && modelB) {
+    verdict = generateVerdict(modelA, modelB);
+  }
 
   const metricKeys: { key: keyof Omit<Metrics, 'id' | 'model_id' | 'created_at'>; label: string }[] = [
     { key: 'reasoning', label: 'Reasoning' },

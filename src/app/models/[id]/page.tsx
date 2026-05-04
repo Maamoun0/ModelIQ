@@ -1,14 +1,15 @@
 'use client';
 
-import { useState, useEffect, use } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, Star, Hash, Calendar, Zap, DollarSign, Brain, ShieldAlert, Award } from 'lucide-react';
 import { modelService } from '@/services/model-service';
 import ModelMetrics from '@/components/models/ModelMetrics';
 import { AIModel } from '@/types';
 
-export default function ModelDetailPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = use(params);
+export default function ModelDetailPage(props: { params: Promise<{ id: string }> }) {
+  const unwrappedParams = React.use(props.params);
+  const id = unwrappedParams.id;
   const [model, setModel] = useState<AIModel | null>(null);
   const [loading, setLoading] = useState(true);
   const [mounted, setMounted] = useState(false);

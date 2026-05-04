@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 ModelIQ — The Definitive AI Benchmarking Platform
 
-## Getting Started
+![ModelIQ Banner](https://raw.githubusercontent.com/Maamoun0/ModelIQ/main/public/banner.png)
 
-First, run the development server:
+## 🚀 Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**ModelIQ** is a premium, state-of-the-art intelligence platform designed to help developers, businesses, and AI enthusiasts discover and compare the world's most advanced AI models. In a rapidly evolving landscape, ModelIQ provides the clarity needed to choose the right model based on cost, performance, and specific use cases.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[**🌐 Live Demo**](https://ai11-omega.vercel.app)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ Key Features
 
-## Learn More
+- **Side-by-Side Comparison:** Deeply analyze metrics for multiple LLMs simultaneously.
+- **Intelligence Metrics:** Real-world scores for Reasoning, Coding, Speed, and Latency.
+- **Smart Filtering:** Filter by Provider (OpenAI, Anthropic, Meta), Pricing, and Modality (Text, Image, Video).
+- **Cost Analysis:** High-precision pricing data per 1 million tokens.
+- **Premium UX:** A stunning, dark-themed interface built with a focus on data visualization.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📸 Screenshots
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Landing Page | Model Explorer |
+| :---: | :---: |
+| ![Hero Banner](https://raw.githubusercontent.com/Maamoun0/ModelIQ/main/public/screenshots/hero_banner.png) | ![Models Grid](https://raw.githubusercontent.com/Maamoun0/ModelIQ/main/public/screenshots/models_grid.png) |
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠 Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Frontend:** [Next.js 15](https://nextjs.org/) (App Router)
+- **Styling:** [Tailwind CSS 4.0](https://tailwindcss.com/) + [Lucide React](https://lucide.dev/)
+- **Backend:** Next.js Server Components & Actions
+- **Database:** [Supabase](https://supabase.com/) (PostgreSQL)
+- **Deployment:** [Vercel](https://vercel.com/)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+
+- npm / yarn / pnpm
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Maamoun0/ModelIQ.git
+   cd ModelIQ
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Set up Environment Variables:**
+   Create a `.env.local` file and add your Supabase credentials:
+   ```env
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_key
+   ```
+
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) to see the result.
+
+---
+
+## 🗺 Roadmap
+
+- [x] Core Explorer & Search
+- [x] Side-by-Side Comparison Tool
+- [ ] Community Trust Ratings
+- [ ] Live Prompt Playground
+- [ ] Enterprise Benchmark Reports
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+Developed with ❤️ by [Maamoun](https://github.com/Maamoun0)
