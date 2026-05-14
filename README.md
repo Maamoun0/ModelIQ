@@ -1,4 +1,4 @@
-# ModelIQ # ModelIQ - The Definitive Benchmarking Platform
+# ModelIQ - The Definitive Benchmarking Platform
 
 ![ModelIQ Banner](https://raw.githubusercontent.com/Maamoun0/ModelIQ/main/public/banner.png)
 
@@ -9,7 +9,6 @@
 [**Live Demo**](https://ai11-omega.vercel.app)
 
 ---
-
 ## Key Features
 
 - **Side-by-Side Comparison**: Deeply analyze metrics for multiple models simultaneously.
