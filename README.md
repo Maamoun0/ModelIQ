@@ -1,19 +1,18 @@
 # ModelIQ - The Definitive Benchmarking Platform
 
-![ModelIQ Banner](https://raw.githubusercontent.com/Maamoun0/ModelIQ/main/public/banner.png)
-
 ## Overview
 
-**ModelIQ** is a premium, state-of-the-art intelligence platform designed to help developers and businesses discover and compare the world's most advanced models. In a rapidly evolving landscape, ModelIQ provides the clarity needed to choose the right model based on cost, performance, and specific use cases.
+**ModelIQ** is a premium, state-of-the-art intelligence platform designed to help developers and businesses discover and compare the world's most advanced software architectures. In a rapidly evolving landscape, ModelIQ provides the clarity needed to choose the right technology based on cost, performance, and specific use cases.
 
-[**Live Demo**](https://ai11-omega.vercel.app)
+[**Live Demo**](https://model-iq.vercel.app)
 
 ---
+
 ## Key Features
 
-- **Side-by-Side Comparison**: Deeply analyze metrics for multiple models simultaneously.
-- - **Intelligence Metrics**: Real-world scores for Reasoning, Coding, Speed, and Latency.
-  - - **Smart Filtering**: Filter by Provider, Pricing, and Modality (Text, Image, Video).
+- **Side-by-Side Comparison**: Deeply analyze metrics for multiple platforms simultaneously.
+- - **Performance Metrics**: Real-world scores for Reasoning, Coding, Speed, and Latency.
+  - - **Smart Filtering**: Filter by Provider, Pricing, and Modality.
     - - **Cost Analysis**: High-precision pricing data.
       - - **Premium UX**: A stunning, dark-themed interface built with a focus on data visualization.
        
