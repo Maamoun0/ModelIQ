@@ -36,6 +36,17 @@
   </table>
 </div>
 
+## 🧠 Technical Challenges I Overcame
+
+Building a data-heavy benchmarking platform presented several complex challenges:
+
+1. **High-Density Data Visualization:**
+   - *Challenge:* Displaying complex JSON metrics (reasoning scores, coding benchmarks, latency) for multiple models simultaneously without overwhelming the user interface.
+   - *Solution:* I engineered a responsive CSS Grid system combined with atomic React components to dynamically render metrics based on the screen size, ensuring readability on both 4K monitors and mobile devices.
+2. **Efficient Supabase Data Fetching:**
+   - *Challenge:* Querying the database for highly nested model capabilities (Modality, API status, token limits) caused slow initial load times.
+   - *Solution:* I utilized Next.js Server Components to fetch and cache the Supabase data on the server, drastically reducing client-side payload and achieving sub-second page loads.
+
 ---
 
 ## 🛠 Engineering Stack
