@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Save, CheckCircle, Bot, Trash2, ShieldCheck, Plus, X } from 'lucide-react';
+import { Save, CheckCircle, Zap, Trash2, ShieldCheck, Plus, X } from 'lucide-react';
 import { modelService } from '@/services/model-service';
 import { Category, AIModel, ModelFeature } from '@/types';
 
@@ -211,7 +211,7 @@ export default function AdminPage() {
           <h1 style={{ fontSize: '2rem', fontWeight: 800, fontFamily: "'Outfit', sans-serif" }}>
             Admin Panel
           </h1>
-          <p style={{ color: 'var(--color-text-secondary)' }}>Add new AI models using AI assistance</p>
+          <p style={{ color: 'var(--color-text-secondary)' }}>Advanced Model Management Interface</p>
         </div>
       </div>
 
@@ -254,7 +254,7 @@ export default function AdminPage() {
             {loading ? (
               <>⏳ Generating...</>
             ) : (
-              <><Bot size={18} /> Auto-Fill Data</>
+              <><Zap size={18} /> Prefill Metadata</>
             )}
           </button>
         </div>

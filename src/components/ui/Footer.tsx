@@ -132,7 +132,7 @@ export default function Footer() {
           gap: '12px',
         }}>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
-            © 2026 ModelIQ. All rights reserved.
+            © 2026 ModelIQ. Designed & Developed by Ahmed Maamoun.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
             Built with ❤️ for the AI community

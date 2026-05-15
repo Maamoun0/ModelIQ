@@ -10,7 +10,7 @@ const navLinks = [
   { href: '/models', label: 'Models', icon: LayoutGrid },
   { href: '/categories', label: 'Categories', icon: Search },
   { href: '/compare', label: 'Compare', icon: GitCompareArrows },
-  { href: '/admin', label: 'Admin (AI Data)', icon: Brain }, // New link
+  { href: '/admin', label: 'Admin Dashboard', icon: Brain }, // New link
 ];
 
 export default function Navbar() {
