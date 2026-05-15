@@ -1,103 +1,66 @@
-# 🧠 ModelIQ — Advanced LLM Intelligence & Benchmarking Platform
+# 🧠 ModelIQ: The LLM Intelligence Hub
+### Deciphering the landscape of Large Language Models.
 
-![ModelIQ Banner](./public/banner.png)
-
-**ModelIQ** is a high-performance, premium intelligence platform engineered to provide clarity in the rapidly evolving landscape of Artificial Intelligence. Built for developers, researchers, and enterprise decision-makers, ModelIQ offers a centralized hub to explore, compare, and analyze the world's most sophisticated Large Language Models (LLMs) through empirical data and deep metrics.
-
-[**🌐 Explore the Live Platform**](https://ai11-omega.vercel.app)
+**Project Lead:** Ahmed Maamoun
 
 ---
 
-## ✨ Core Value Propositions
-
-- **Data-Driven Comparison:** Perform exhaustive side-by-side analysis of reasoning, coding, and latency metrics.
-- **Economic Transparency:** High-precision pricing data standardized per 1 million tokens for both input and output.
-- **Architectural Insights:** Deep dives into context window utilization, modality support (Text, Image, Video), and API availability.
-- **Premium User Experience:** A state-of-the-art, dark-themed interface built with a focus on high-density data visualization and smooth micro-interactions.
+## 🔬 Personal Insight
+The AI space moves so fast it's almost impossible to keep track of which model is best for what task. I built **ModelIQ** as a personal tool that grew into a full platform. My goal was simple: stop the hype and look at the **numbers**. Input prices, output speeds, and reasoning benchmarks—all in one place.
 
 ---
 
-## 📸 Platform Interface
+## 📸 Platform Gallery
 
 <div align="center">
-  <table border="0">
-    <tr>
-      <td align="center"><b>Main Explorer</b><br/><img src="./public/screenshots/models_grid.png" width="400"/></td>
-      <td align="center"><b>Search & Discovery</b><br/><img src="./public/screenshots/search_interface.png" width="400"/></td>
-    </tr>
-    <tr>
-      <td align="center"><b>Detailed Metrics</b><br/><img src="./public/screenshots/model_detail.png" width="400"/></td>
-      <td align="center"><b>Comparison Engine</b><br/><img src="./public/screenshots/comparison_view.png" width="400"/></td>
-    </tr>
-    <tr>
-      <td align="center"><b>Admin Interface</b><br/><img src="./public/screenshots/admin_dashboard.png" width="400"/></td>
-      <td align="center"><b>Mobile Experience</b><br/><img src="./public/screenshots/mobile_responsive.png" width="400"/></td>
-    </tr>
-  </table>
+  <img src="./public/banner.png" width="100%" />
 </div>
 
-## 🧠 Technical Challenges I Overcame
+<br/>
 
-Building a data-heavy benchmarking platform presented several complex challenges:
-
-1. **High-Density Data Visualization:**
-   - *Challenge:* Displaying complex JSON metrics (reasoning scores, coding benchmarks, latency) for multiple models simultaneously without overwhelming the user interface.
-   - *Solution:* I engineered a responsive CSS Grid system combined with atomic React components to dynamically render metrics based on the screen size, ensuring readability on both 4K monitors and mobile devices.
-2. **Efficient Supabase Data Fetching:**
-   - *Challenge:* Querying the database for highly nested model capabilities (Modality, API status, token limits) caused slow initial load times.
-   - *Solution:* I utilized Next.js Server Components to fetch and cache the Supabase data on the server, drastically reducing client-side payload and achieving sub-second page loads.
-
----
-
-## 🛠 Engineering Stack
-
-| Layer | Technology |
+| Model Exploration | Benchmarking Engine |
 | :--- | :--- |
-| **Frontend** | [Next.js 15](https://nextjs.org/) (App Router, Server Components) |
-| **Styling** | [Tailwind CSS 4.0](https://tailwindcss.com/) + [Lucide React](https://lucide.dev/) |
-| **Architecture** | Atomic Component Design, Glassmorphism UX |
-| **Database** | [Supabase](https://supabase.com/) (PostgreSQL) |
-| **Deployment** | [Vercel](https://vercel.com/) |
+| <img src="./public/screenshots/models_grid.png" width="400"/> | <img src="./public/screenshots/comparison_view.png" width="400"/> |
+
+| Search & Discovery | Admin Control |
+| :--- | :--- |
+| <img src="./public/screenshots/search_interface.png" width="400"/> | <img src="./public/screenshots/admin_dashboard.png" width="400"/> |
 
 ---
 
-## 🚀 Deployment & Local Setup
-
-### 1. Repository Initialization
-```bash
-git clone https://github.com/Maamoun0/ModelIQ.git
-cd ModelIQ
-```
-
-### 2. Dependency Management
-```bash
-npm install
-```
-
-### 3. Environment Configuration
-Create a `.env.local` file with your secure credentials:
-```env
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_endpoint
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_public_anon_key
-```
-
-### 4. Database Setup
-Execute the SQL schemas found in the `supabase/` directory within your Supabase SQL Editor:
-1. `schema.sql` — Initializes table structures and relationships.
-2. `seed.sql` — Populates the platform with initial high-performance model data.
-
-### 5. Launch Development Server
-```bash
-npm run dev
-```
-Navigate to `http://localhost:3000` to access the localized instance.
+## 🛠 What's Inside?
+*   **Empirical Comparisons:** Side-by-side data on reasoning, coding, and latency.
+*   **Economic Transparency:** Standardized pricing (per 1M tokens) for clear ROI analysis.
+*   **Capability Deep-Dives:** Modality support, context windows, and API availability.
+*   **High-Density UI:** A dark-themed, glassmorphism interface designed for data lovers.
 
 ---
 
-## 📄 License
+## 🧠 Engineering Spotlight: The Supabase Optimization
+One of the trickiest parts was handling the nested data for model capabilities (like modality and API status). Fetching these individually caused a significant "waterfall" effect on load.
 
-This software is distributed under the MIT License. See `LICENSE` for more information.
+**The Solution:** I refactored the data layer to use **Next.js 15 Server Components**. By fetching all relational data in a single server-side query and caching the result at the edge, I was able to remove the client-side fetch lag entirely. The result? Sub-second page loads even with a heavy data matrix.
 
 ---
 
-**Designed & Engineered with Precision by [Ahmed Maamoun](https://github.com/Maamoun0)**
+## 🏗 Stack Blueprint
+*   **Platform:** Next.js 15 (App Router)
+*   **Data:** Supabase (PostgreSQL)
+*   **Styling:** Tailwind CSS 4.0
+*   **Icons:** Lucide React
+
+---
+
+## 🚦 Quick Start
+1. `git clone https://github.com/Maamoun0/ModelIQ.git`
+2. `npm install`
+3. Set your `NEXT_PUBLIC_SUPABASE_URL` and `KEY` in `.env.local`.
+4. `npm run dev`
+
+---
+
+### 👋 Connectivity
+Built by **Ahmed Maamoun**. 
+[GitHub](https://github.com/Maamoun0) | [LinkedIn](https://linkedin.com/in/your-linkedin-profile)
+
+*Cutting through the noise with data.*
